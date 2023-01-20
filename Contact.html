@@ -1,0 +1,37 @@
+<!-- Web test từng phần nhỏ trang web -->
+<html>
+
+<head>
+
+    <style>
+        .container{
+
+            margin-left:50%;margin-right:50
+            ;margin-top:50%;margin-bottom:50%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <input id="test" type="submit" value="clickme" onclick="deactivatefunc()" style="background-color: red; ">
+
+    </div>
+    
+    <script type="text/javascript">
+
+        function deactivatefunc() {
+            var btn = document.getElementById("test");
+            btn.disabled = true;
+            var mytimer = setTimeout("location.href = 'index.html';");
+        }
+
+        function activate() {
+            var btn = document.getElementById("test");
+            btn.disabled = false;
+        }
+    </script>
+</body>
+
+</html>
